@@ -1,0 +1,67 @@
+{
+  "name": "seeka-video",
+  "version": "1.0.0",
+  "description": "AI 带货视频全自动生成 — 输入产品名即可生成 1080p 短视频。支持电商/TVC/漫剧/教程四种模式。",
+  "author": "SEEKA AI",
+  "license": "MIT",
+  "homepage": "https://github.com/DingGuoQing/seeka-video",
+  "repository": "https://github.com/DingGuoQing/seeka-video",
+  "category": "content-creation",
+  "tags": ["video", "ecommerce", "shopping", "marketing", "content-creation", "ai-video"],
+  "keywords": ["带货", "短视频", "电商", "TVC", "AI视频"],
+  
+  "skills": [
+    {
+      "name": "ecommerce_cosmetics",
+      "display_name": "电商带货-美妆",
+      "description": "美妆类产品带货视频生成 — 痛点钩子→产品展示→效果对比→零思考指令",
+      "category": "电商"
+    },
+    {
+      "name": "ecommerce_electronics",
+      "display_name": "电商带货-数码",
+      "description": "数码产品带货视频生成 — 参数对比→实拍展示→性价比强调",
+      "category": "电商"
+    },
+    {
+      "name": "ecommerce_multilang",
+      "display_name": "跨境多语言带货",
+      "description": "多语言带货视频 — 中文脚本自动翻译为英/日/韩/西 + 多语言 TTS",
+      "category": "跨境"
+    },
+    {
+      "name": "tvc_product_launch",
+      "display_name": "TVC-产品发布",
+      "description": "高端产品发布广告 — 品牌调性→产品美学→电影级叙事",
+      "category": "TVC"
+    },
+    {
+      "name": "comic_short",
+      "display_name": "AI漫剧-短篇",
+      "description": "AI 漫剧短篇生成 — 角色锁定→剧情推演→25宫格分镜",
+      "category": "漫剧"
+    },
+    {
+      "name": "tutorial_howto",
+      "display_name": "教程-操作演示",
+      "description": "产品使用教程 — 问题引入→步骤拆解→效果展示",
+      "category": "教程"
+    }
+  ],
+
+  "requirements": {
+    "hardware": "NVIDIA RTX 3060+ (推荐 RTX 5090 32GB)",
+    "python": "3.10+",
+    "optional": ["ComfyUI", "ViiTorVoice", "Ollama"],
+    "dependencies": ["torch", "transformers", "ffmpeg", "Pillow"]
+  },
+
+  "install": {
+    "hermes": "hermes skill install seeka-video",
+    "openclaw": "claw skill install seeka-video",
+    "manual": "git clone https://github.com/DingGuoQing/seeka-video ~/.hermes/skills/seeka-video"
+  },
+
+  "screenshots": [],
+  "demo_video": ""
+}
